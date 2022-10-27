@@ -4,12 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Book</title>
   </head>
   <body>
     <h1>Book a table</h1>
     <main>
-      <article>here we can book a table</article>
+      <section id="form">
+      <p>Please use the form below to book a table </p>
+      <!--form, name, Number of persons, date,time,message, reset btn, submit
+      btn-->
+        <th>
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <label for="name">Name</label>
+                </td>
+                <td>
+                  <input type="text" id="name" name="name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="number">Number of persons</label>
+                </td>
+                <td>
+                  <input type="number" id="number" name="number" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="date">Date</label>
+                </td>
+                <td>
+                  <input type="date" id="date" name="date" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="time">Time</label>
+                </td>
+                <td>
+                  <input type="time" id="time" name="time" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="message">Message</label>
+                </td>
+                <td>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="3"
+                    cols="30"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="reset" value="Reset" />
+                </td>
+                <td>
+                  <input type="submit" value="Submit" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </th>
+        </th>
+      </section>
     </main>
     <nav>
       <ul>
@@ -20,5 +85,7 @@
         <li><a href="bookForm.html">Book table</a></li>
       </ul>
     </nav>
+    <div id="footer"></div>
+    <script src="js/footer.js"></script>
   </body>
 </html>
