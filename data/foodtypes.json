@@ -1,0 +1,16 @@
+{
+  "food": {
+    "chicken": {
+      "price": 1,
+      "quantity": 20
+    },
+    "beef": {
+      "price": 1.5,
+      "quantity": 20
+    },
+    "pork": {
+      "price": 1.1,
+      "quantity": 20
+    }
+  }
+}
