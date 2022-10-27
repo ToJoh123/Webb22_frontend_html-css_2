@@ -1,2 +1,24 @@
 # Webb22_frontend_html-css_2
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"></head><body class="c7 doc-content"><h1 class="c12" id="h.wz9p5td40yb"><span class="c9">Uppgift</span></h1><ul class="c0 lst-kix_j6vfybx7vsmm-0 start"><li class="c10 li-bullet-0"><span class="c3">Skapa en hemsida &aring;t en fiktiv resturang</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-1 start"><li class="c11 li-bullet-0"><span class="c3">Sidan ska inneh&aring;lla f&ouml;ljande sidor</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-2 start"><li class="c5 li-bullet-0"><span class="c3">Hem</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-3 start"><li class="c4 li-bullet-0"><span class="c3">Information om resturangen, bilder osv.</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-2"><li class="c5 li-bullet-0"><span class="c3">Meny</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-3 start"><li class="c4 li-bullet-0"><span class="c3">En tabell med r&auml;ttens namn, pris, ingredienser och bild</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-2"><li class="c5 li-bullet-0"><span class="c3">Om oss</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-3 start"><li class="c4 li-bullet-0"><span class="c3">&Ouml;ppettider</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-4 start"><li class="c2 li-bullet-0"><span class="c3">Lista med &ouml;ppettider f&ouml;r alla dagar</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-3"><li class="c4 li-bullet-0"><span>L&auml;gg in en karta fr&aring;n</span><span><a class="c1" href="https://www.google.com/url?q=http://hitta.se&amp;sa=D&amp;source=editors&amp;ust=1666861916064948&amp;usg=AOvVaw044dLDdevrF7pa1c60Q5iN">&nbsp;</a></span><span class="c8"><a class="c1" href="https://www.google.com/url?q=http://hitta.se&amp;sa=D&amp;source=editors&amp;ust=1666861916065287&amp;usg=AOvVaw3ZB-3VSifVUoBZLx6V5R9D">hitta.se</a></span><span class="c3">&nbsp;eller google maps</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-2"><li class="c5 li-bullet-0"><span class="c3">Boka bord</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-3 start"><li class="c4 li-bullet-0"><span class="c3">Formul&auml;r med f&ouml;ljande inputs</span></li></ul><ul class="c0 lst-kix_j6vfybx7vsmm-4 start"><li class="c2 li-bullet-0"><span class="c3">Namn</span></li><li class="c2 li-bullet-0"><span class="c3">Antal personer</span></li><li class="c2 li-bullet-0"><span class="c3">Datum</span></li><li class="c2 li-bullet-0"><span class="c3">Tid</span></li><li class="c2 li-bullet-0"><span class="c3">Meddelande</span></li><li class="c2 li-bullet-0"><span class="c3">Reset knapp</span></li><li class="c2 li-bullet-0"><span class="c3">Submitt knapp (ingen funktionalitet)</span></li></ul><p class="c6"><span class="c3"></span></p></body></html>
+
+## Uppgift
+
+- Skapa en hemsida åt en fiktiv resturang
+- Sidan ska innehålla följande sidor
+- Hem
+- Information om resturangen, bilder osv.
+
+* Meny
+* En tabell med rättens namn, pris, ingredienser och bild
+* Om oss
+* Öppettider
+* Lista med öppettider för alla dagar
+* Lägg in en karta från hitta.se eller google maps
+* Boka bord
+* Formulär med följande inputs
+* Namn
+* Antal personer
+* Datum
+* Tid
+* Meddelande
+* Reset knapp
+* Submitt knapp (ingen funktionalitet)
