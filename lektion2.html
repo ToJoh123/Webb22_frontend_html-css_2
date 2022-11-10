@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css style</title>
+    <style>
+      html {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 48px;
+      }
+      body {
+        background: rgb(172, 239, 159);
+        background: linear-gradient(
+          20deg,
+          rgba(172, 239, 159, 1) 44%,
+          rgba(11, 32, 205, 1) 85%
+        );
+        color: blueviolet;
+        font-size: 20px;
+        width: 100vw;
+      }
+      header {
+        background-color: #acef9f;
+        height: 100px;
+        width: 4rem;
+        border-top-right-radius: 25%;
+      }
+      header span {
+        color: rgb(235, 68, 68);
+        margin-top: 20px;
+      }
+
+      .title-element {
+        color: red;
+        width: 80px;
+      }
+      h1 {
+        background-color: blueviolet;
+        color: #fff;
+        width: 200px;
+      }
+      .card {
+        position: relative;
+        width: 50%;
+        margin: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #fff;
+        color: #232323;
+        padding-top: 0.1px;
+        border-radius: 4px;
+        background-image: url(https://picsum.photos/15/20/?grayscale);
+      }
+      .card .watermark {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        opacity: 0.4;
+      }
+      .card .watermark#w1 {
+        color: red;
+        z-index: 3;
+      }
+      .card .watermark#w1 {
+        color: blueviolet;
+        z-index: 2;
+        transform: translate(1px, 1px);
+      }
+      .card .watermark#w1 {
+        color: yellow;
+        z-index: 1;
+        transform: translate(2px, 2px);
+      }
+      .card-image-wrapper {
+      }
+      .card-image-icon {
+      }
+      .card img {
+        width: 80%;
+        padding: 8px;
+        margin: 16px auto;
+        box-sizing: border-box;
+        border-color: #163a1c;
+        border-width: 4px;
+        border-style: solid;
+        border-bottom-color: aqua;
+        border-top-style: dashed;
+        border: #163a1c solid 4px;
+        border-radius: 50%; /* runda av kanter */
+        display: block;
+      }
+      .card-content {
+        padding: 16px;
+        background-color: bisque;
+      }
+      .card .card-content h3 {
+        margin: 0 0 8;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+      }
+      .card-content button {
+        width: 120px;
+        height: 50px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #82c88e;
+      }
+      .card .card-content p {
+        margin: 0;
+      }
+      .emoji {
+        background-color: #163a1c;
+        font-size: 16px;
+        border-radius: 50%;
+      }
+      .emoji.floating-emoji {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .emoji.fixed-emoji {
+        position: fixed;
+        bottom: 16px;
+        left: 16px;
+      }
+      .gallery {
+        margin-top: 32px 32px 0; /* 32 till vänster 32 till höger */
+        background-color: #fff;
+        width: calc(100%-32px);
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; /* justify content, berättar att vi vill ha content horisontelt*/
+        align-items: center; /* berättar att vi centrera verticalt? */
+        gap: 0 6px;
+      }
+      .gallery-item-image {
+        margin: 8px;
+      }
+      .wall {
+        margin-top: 32px 32px 0; /* 32 till vänster 32 till höger */
+        background-color: #fff;
+        width: calc(100%-32px);
+        padding: 24px;
+        box-sizing: border-box;
+        display: grid;
+        gap: 4px;
+        grid-template-columns: 1fr 2fr 50px 100px;
+        grid-template-rows: repeat(3, 25px);
+        grid-template-areas:
+          "header header header search"
+          "left main main right"
+          "left footer footer right";
+      }
+      .wall > div {
+        background-color: rgb(218, 75, 4);
+        padding: 8px;
+      }
+      #brick1 {
+        grid-row: 1;
+        grid-column: 2/4;
+        background-color: rgb(211, 65, 157);
+      }
+      #brick2 {
+        grid-row: 2;
+        grid-column: 2/4;
+        background-color: rgb(94, 65, 211);
+      }
+      #brick3 {
+        grid-area: footer;
+        background-color: #232323;
+      }
+      #brick4 {
+        grid-area: search;
+        background-color: #acef9f;
+      }
+      #brick5 {
+        grid-area: left;
+        background-color: yellow;
+      }
+      #brick6 {
+        grid-area: right;
+        background-color: burlywood;
+      }
+      #brick7 {
+        grid-area: main;
+        background-color: rgb(22, 165, 43);
+      }
+      #brick8 {
+        grid-area: footer;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="title-element">CSS</h1>
+      <p>
+        not quite how i wanted
+        <strong> <span>it</span></strong>
+      </p>
+    </header>
+
+    <span class="emoji floating-emoji"> &#129413;</span>
+    <span class="emoji fixed-emoji"> &#128013;</span>
+
+    <div class="card">
+      <span class="watermark" id="w1">TJ</span>
+      <span class="watermark" id="w2">TJ</span>
+      <span class="watermark" id="w3">TJ</span>
+      <img src="https://picsum.photos/500" alt="rando pico" />
+
+      <div class="card-image-wrapper">
+        <img src="https://picsum.photos" alt="" />
+        <span class="card-image-icon">&#127769;</span>
+      </div>
+
+      <div class="card-content">
+        <h3>Namn Namesson</h3>
+        <p>Namngivare</p>
+        <button>noname</button>
+      </div>
+    </div>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?grayscale"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?blur"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?grayscale"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?grayscale"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?blur"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100?grayscale"
+          alt=""
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          class="gallery-item-image"
+          src="https://picsum.photos/100"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="wall">
+      <div id="brick1"></div>
+      <div id="brick2"></div>
+      <div id="brick3"></div>
+      <div id="brick4"></div>
+      <div id="brick5"></div>
+      <div id="brick6"></div>
+      <div id="brick7"></div>
+      <div id="brick8"></div>
+      <div id="brick9"></div>
+      <div id="brick10"></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormTest</title>
+    <style>
+      .card {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Submit your data</h2>
+    <table id="table">
+      <th></th>
+      <th>x-value</th>
+      <th>x-value</th>
+      <tr>
+        <th>y-value</th>
+        <td><input type="text" /></td>
+        <td><input type="text" value="text" /></td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <th>y-value</th>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <th>y-value</th>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <th>y-value</th>
+        <td><input type="checkbox" /></td>
+        <td><input type="radio" /></td>
+        <td><button>clicko</button></td>
+      </tr>
+    </tr>
+    <tr>
+      <th>y-value</th>
+      <td><select name="chosen" id="choose">
+        <option value="first">first</option>
+        <option value="second">second</option>
+      </select></td>
+      <td><input type="radio" /></td>
+      <td><button>clicko</button></td>
+    </tr>
+    </table>
+    <button class="btn" id="sendmydata">Send my data</button>
+  </div>
+
+    <script>
+      //this is the function that will be called when the button is clicked
+      function test() {
+        //get the table
+        let table = document.querySelector("table");
+        //get the first row of the table
+        let row = table.rows[0];
+        //get the first cell of the first row
+        let cell = row.cells[0];
+        //get the value of the first cell
+        let value = cell.innerHTML;
+        //print the value to the console
+        //This code will print out row cells with foreach function
+        for (let i = 0; i < table.rows.length; i++) {
+          for (let j = 0; j < table.rows[i].cells.length; j++) {
+            console.log(table.rows[i].cells[j].innerHTML);
+          }
+        }
+      }
+      //get the button
+      let button = document.querySelector("button");
+      //add an event listener to the button
+      button.addEventListener("click", test);
+    </script>
+  </body>
+</html>

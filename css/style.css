@@ -70,6 +70,26 @@ main {
     margin-top: 60px;
 }
 
-/* this makes all picture elements same seize */
+/* this will make id footer stick to button of page*/
 
 
+#footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: black;
+    text-align: center;
+}
+
+
+/*this will make the id index give 80% view width*/
+#index {
+    width: 80%;
+    margin: 10 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
