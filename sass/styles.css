@@ -1,11 +1,101 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  background-color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
 }
 
-header {
-  color: blue;
+section {
+  margin: 16px 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  .products {
+    flex-direction: column;
+  }
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: fit-content;
+}
+.card:hover {
+  background-color: #fafafa;
+}
+.card--dark {
+  background-color: #38f6f6;
+  color: white;
+}
+.card-title {
+  font-size: 1.2rem;
+  color: #348efc;
+}
+.card-featured {
+  max-width: 900px;
+}
+.card-featured .card-title {
+  color: #896723;
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+.credit-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: fit-content;
+  transition: all 0.2s;
+  animation: slide 2s 1 forwards;
+  border-radius: 4px;
+  width: 210px;
+  background-color: #348efc;
+  color: #fff;
+}
+.credit-card:hover {
+  background-color: #fafafa;
+}
+.credit-card--dark {
+  background-color: #38f6f6;
+  color: white;
+}
+.credit-card:hover {
+  transform: translateY(2px);
+}
+.credit-card:active {
+  transform: translateY(-2px);
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+.credit-card p {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.credit-card:hover {
+  background-color: rgb(80, 4, 35);
+  filter: brightness(95%);
 }
 
 /*# sourceMappingURL=styles.css.map */
