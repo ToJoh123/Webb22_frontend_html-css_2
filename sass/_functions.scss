@@ -1,0 +1,12 @@
+@function randomColor() {
+    $r: random(255);
+    $b: random(255);
+    $g: random(255);
+
+    @return rgb($r,$b,$g);
+}
+
+@function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+}

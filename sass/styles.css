@@ -32,7 +32,7 @@ section {
   background-color: #fafafa;
 }
 .card--dark {
-  background-color: #38f6f6;
+  background-color: #09c7c7;
   color: white;
 }
 .card-title {
@@ -72,7 +72,7 @@ section {
   background-color: #fafafa;
 }
 .credit-card--dark {
-  background-color: #38f6f6;
+  background-color: #09c7c7;
   color: white;
 }
 .credit-card:hover {
@@ -94,7 +94,7 @@ section {
   margin-top: 0;
 }
 .credit-card:hover {
-  background-color: rgb(80, 4, 35);
+  background-color: rgb(25, 142, 119);
   filter: brightness(95%);
 }
 

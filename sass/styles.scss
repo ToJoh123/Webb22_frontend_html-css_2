@@ -1,67 +1,11 @@
-
-$body-background: #e0e0e0;
-$primary-color: #348efc;
-
-@function invert($color, $amount: 100%) {
-    $inverse: change-color($color, $hue: hue($color) + 180);
-    @return mix($inverse, $color, $amount);
-}
-
-
-@mixin card {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    width: fit-content;
-
-    &:hover {
-        background-color: #fafafa;
-    }
-    &--dark {
-        background-color: invert($color: #f63838);
-        color: white;
-    }
-}
-
-@mixin hoverEffect {
-    transition: all 0.2s;
-
-    &:hover {
-        transform: translateY(2px);
-    }
-    &:active {
-        transform: translateY(-2px);
-    }
-}
-
-@mixin slideAnimation {
-    animation: slide 2s 1 forwards;
-
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(300px);
-        }
-    }
-}
-
-@function randomColor() {
-    $r: random(255);
-    $b: random(255);
-    $g: random(255);
-
-    @return rgb($r,$b,$g);
-}
-
+@use "variables";
+@use "mixins" as m;
+@use "functions" as f;
 
 body {
     height: 100vh;
     width: 100vw;
-    background-color: $body-background;
+    background-color: variables.$body-background;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -81,12 +25,12 @@ section {
 }
 
 .card {
-    @include card();
+    @include m.card();
 
 
     &-title {
         font-size: 1.2rem;
-        color: $primary-color;
+        color: variables.$primary-color;
     }
 
     &-featured {
@@ -111,12 +55,12 @@ section {
 }
 
 .credit-card {
-    @include card();
-    @include hoverEffect();
-    @include slideAnimation();
+    @include m.card();
+    @include m.hoverEffect();
+    @include m.slideAnimation();
     border-radius: 4px;
     width: 210px;
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: #fff;
     & p {
         margin-bottom: 4px;
@@ -124,7 +68,7 @@ section {
     }
 
     &:hover {
-        background-color: randomColor();
+        background-color: f.randomColor();
         filter: brightness(95%);
     }
 }

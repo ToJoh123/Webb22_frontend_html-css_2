@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery lesson</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button id="hide-p-btn" type="button">Hide text</button>
+    <button id="show-p-btn" type="button">Show text</button>
+    <button id="hide-p1-btn" type="button">hide p1</button>
+    <button id="show-p1-btn" type="button">show p1</button>
+    <button id="translate-text-btn" type="button">löksåsa text</button>
+
+    <p id="p1">
+        <h3>1</h3>
+      <span> Lorem </span>ipsum dolor sit amet consectetur adipisicing elit.
+      Sed, repudiandae sunt! Eos officia reiciendis expedita, molestias ratione
+      dolores earum non, iure minima reprehenderit saepe velit atque laboriosam,
+      quos nesciunt!
+    </p>
+    <p id="p2">
+        <h3>2</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis
+      dolorem magnam reiciendis? Possimus ea rem culpa hic nam amet.
+    </p>
+    <p id="p3">
+        <h3>3</h3>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ea,
+      ipsa dicta ullam quasi fugiat dolor, hic sit quo nesciunt distinctio
+      ratione illum magni ut, nulla iusto neque facilis voluptatem.
+    </p>
+    <p id="p4">
+        <h3>4</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab ipsam
+      minima debitis incidunt tenetur quidem! Illum officiis incidunt ut,
+      veritatis culpa debitis quos doloremque. Tenetur sunt consequuntur beatae
+      alias!
+    </p>
+    <p id="p5">
+        <h3>5</h3>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+      aliquam recusandae dolorem consequuntur, sint soluta excepturi magnam!
+      Incidunt sapiente suscipit, voluptas, blanditiis a voluptatibus obcaecati,
+      officiis fuga cumque accusamus saepe!
+    
+  
+
+    <script>
+
+        //why not working???
+        
+      $(document).ready(function () {
+        // console.log("Ready");
+        // $("p").append(" :)")
+        // $("p").hide()
+        // $("p").show(3000,function() {
+        //     $("span",this).css("background-color","red")
+        //      this.append("Welcome");
+        // })
+        $("#hide-text-btn").click(function () {
+          $("p").hide();
+          $(this).text("hidden");
+        });
+
+        $("#show-text-btn").click(function () {
+          $("p").show();
+        });
+        $("#hide-p1-btn").click(function () {
+          $("#p1").hide();
+        });
+
+        $("#show-p1-btn").click(function () {
+          $("#p1").show();
+        });
+        $("#translate-text-btn").click(function () {
+          $("p").text(
+            "Löksås ipsum lax är göras stig dunge hav, vidsträckt kunde sällan ordningens smultron både kom, nya händer blivit det ta groda. För från genom blivit och om verkligen äng, händer hwila sin annan bra genom tiden från, dimmhöljd från flera där plats annan. Sitt rot se ser ordningens att hela det hav, rännil tre om hwila rännil träutensilierna verkligen, sitt lax vad vidsträckt ta åker sax. "
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
